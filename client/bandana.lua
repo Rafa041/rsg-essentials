@@ -8,7 +8,7 @@ AddEventHandler('rsg-bandana:client:ToggleBandana', function()
 
     if not bandana then
         if not male then
-            StartTaskItemInteraction(cache.ped, `KIT_BANDANA`, `BANDANA_ON_RIGHT_HAND`, 1, 0, -1082130432)
+            StartTaskItemInteraction(cache.ped, "KIT_BANDANA", "BANDANA_ON_RIGHT_HAND", 1, 0, -1082130432)
             Wait(700)
             ApplyShopItemToPed(cache.ped, 0xC615A086, true, true, true)
             UpdatePedVariation(cache.ped, 0, 1, 1, 1, false)
@@ -18,7 +18,7 @@ AddEventHandler('rsg-bandana:client:ToggleBandana', function()
             return
         end
 
-        StartTaskItemInteraction(cache.ped, `KIT_BANDANA`, `BANDANA_ON_RIGHT_HAND`, 1, 0, -1082130432)
+        StartTaskItemInteraction(cache.ped, "KIT_BANDANA", "BANDANA_ON_RIGHT_HAND", 1, 0, -1082130432)
         Wait(700)
         EquipMetaPedOutfit(cache.ped, -1100875244)
         UpdatePedVariation(cache.ped, 0, 1, 1, 1, false)
@@ -29,7 +29,7 @@ AddEventHandler('rsg-bandana:client:ToggleBandana', function()
     end
 
     if not male then
-        StartTaskItemInteraction(cache.ped, `KIT_BANDANA`, `BANDANA_OFF_RIGHT_HAND`, 1, 0, -1082130432)
+        StartTaskItemInteraction(cache.ped, "KIT_BANDANA", "BANDANA_OFF_RIGHT_HAND", 1, 0, -1082130432)
         Wait(700)
         RemoveTagFromMetaPed(cache.ped, 0x5FC29285, 0)
         Wait(100)
@@ -41,7 +41,7 @@ AddEventHandler('rsg-bandana:client:ToggleBandana', function()
         return
     end
 
-    StartTaskItemInteraction(cache.ped, `KIT_BANDANA`, `BANDANA_OFF_RIGHT_HAND`, 1, 0, -1082130432)
+    StartTaskItemInteraction(cache.ped, "KIT_BANDANA", "BANDANA_OFF_RIGHT_HAND", 1, 0, -1082130432)
     Wait(700)
     RemoveTagFromMetaPed(cache.ped, 0x5FC29285, 0)
     Wait(100)

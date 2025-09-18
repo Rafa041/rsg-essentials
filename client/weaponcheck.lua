@@ -12,6 +12,6 @@ RegisterNetEvent('rsg-core:client:RemoveWeaponFromTab', function(weaponName)
     end
 
     if weaponHash == weapon then 
-        SetCurrentPedWeapon(ped, `WEAPON_UNARMED`, true)
+        SetCurrentPedWeapon(ped, "WEAPON_UNARMED", true)
     end
 end)

@@ -150,7 +150,7 @@ RegisterNetEvent('rsg-essentials:client:pvpToggle',function()
     local ped = PlayerPedId()
 
     if pvp == true then
-        SetRelationshipBetweenGroups(1,`PLAYER`, `PLAYER`)
+        SetRelationshipBetweenGroups(1,"PLAYER", "PLAYER")
         NetworkSetFriendlyFireOption(false)
         Citizen.InvokeNative(0xB8DE69D9473B7593, ped, 6) -- Disable choking other people
 
@@ -160,7 +160,7 @@ RegisterNetEvent('rsg-essentials:client:pvpToggle',function()
         return
     end
 
-    SetRelationshipBetweenGroups(5, `PLAYER`, `PLAYER`)
+    SetRelationshipBetweenGroups(5, "PLAYER", "PLAYER")
     NetworkSetFriendlyFireOption(true)
     Citizen.InvokeNative(0x949B2F9ED2917F5D, ped, 6) -- Enable choking other people
 

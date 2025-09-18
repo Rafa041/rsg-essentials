@@ -2,9 +2,6 @@ Config = Config or {}
 
 Config.Debug = false
 
--- enable first person shooting
-Config.FirstPersonShooting = false
-
 -- enable xmas weather
 Config.EnableXmas = false
 
@@ -30,10 +27,10 @@ Config.EagleEye = {
         enabled = true, -- Default: true (only specific jobs can use Eagle Eye on false)
     },
     vallaw = {
-        enabled = false, 
+        enabled = false,
     },
     rholaw = {
-        enabled = false, 
+        enabled = false,
     }
 }
 
@@ -50,7 +47,7 @@ Config.Discord = {
     SecondButtonPlaceholder = 'visit site text',
     SecondButtonLink = 'https://example.org',
 
-    UpdateEvery = 60000, -- In ms. (60000ms = 1 minute)
+    UpdateEvery = 60000,                                   -- In ms. (60000ms = 1 minute)
     Template = 'ID: {ID} | Name: {NAME} | {PLAYERS_COUNT}' -- {NAME}, {ID}, {PLAYERS_COUNT}
 }
 
@@ -66,13 +63,13 @@ Config.Density = {
     -- Scenario Animal Density
     [2] = 1.0,
     -- Ambient Human Density
-    [3] = 1.0,
+    [3] = 0.0,
     -- Scenario Human Density
-    [4] = 1.0,
+    [4] = 0.0,
     -- Ambient Ped Density
-    [5] = 1.0,
+    [5] = 0.0,
     -- Scenario Ped Density
-    [6] = 1.0,
+    [6] = 0.0,
     -- Parked Vehicle Density
     [7] = 0.0,
     -- Random Vehicle Density
@@ -83,48 +80,48 @@ Config.Density = {
 
 -- water types config
 Config.WaterTypes = {
-    [1] =  {["name"] = "Sea of Coronado",       ["waterhash"] = -247856387,     ["watertype"] = "sea"},
-    [2] =  {["name"] = "San Luis River",        ["waterhash"] = -1504425495,    ["watertype"] = "river"},
-    [3] =  {["name"] = "Lake Don Julio",        ["waterhash"] = -1369817450,    ["watertype"] = "lake"},
-    [4] =  {["name"] = "Flat Iron Lake",        ["waterhash"] = -1356490953,    ["watertype"] = "lake"},
-    [5] =  {["name"] = "Upper Montana River",   ["waterhash"] = -1781130443,    ["watertype"] = "river"},
-    [6] =  {["name"] = "Owanjila",              ["waterhash"] = -1300497193,    ["watertype"] = "river"},
-    [7] =  {["name"] = "HawkEye Creek",         ["waterhash"] = -1276586360,    ["watertype"] = "river"},
-    [8] =  {["name"] = "Little Creek River",    ["waterhash"] = -1410384421,    ["watertype"] = "river"},
-    [9] =  {["name"] = "Dakota River",          ["waterhash"] = 370072007,      ["watertype"] = "river"},
-    [10] =  {["name"] = "Beartooth Beck",       ["waterhash"] = 650214731,      ["watertype"] = "river"},
-    [11] =  {["name"] = "Lake Isabella",        ["waterhash"] = 592454541,      ["watertype"] = "lake"},
-    [12] =  {["name"] = "Cattail Pond",         ["waterhash"] = -804804953,     ["watertype"] = "lake"},
-    [13] =  {["name"] = "Deadboot Creek",       ["waterhash"] = 1245451421,     ["watertype"] = "river"},
-    [14] =  {["name"] = "Spider Gorge",         ["waterhash"] = -218679770,     ["watertype"] = "river"},
-    [15] =  {["name"] = "O'Creagh's Run",       ["waterhash"] = -1817904483,    ["watertype"] = "lake"},
-    [16] =  {["name"] = "Moonstone Pond",       ["waterhash"] = -811730579,     ["watertype"] = "lake"},
-    [17] =  {["name"] = "Roanoke Valley",       ["waterhash"] = -1229593481,    ["watertype"] = "river"},
-    [18] =  {["name"] = "Elysian Pool",         ["waterhash"] = -105598602,     ["watertype"] = "lake"},
-    [19] =  {["name"] = "Lannahechee River",    ["waterhash"] = -2040708515,    ["watertype"] = "river"},
-    [20] =  {["name"] = "Random1",              ["waterhash"] = 231313522,      ["watertype"] = "river"},
-    [21] =  {["name"] = "Random2",              ["waterhash"] = 2005774838,     ["watertype"] = "river"},
-    [22] =  {["name"] = "Random3",              ["waterhash"] = -1287619521,    ["watertype"] = "river"},
-    [23] =  {["name"] = "Random4",              ["waterhash"] = -1308233316,    ["watertype"] = "river"},
-    [24] =  {["name"] = "Random5",              ["waterhash"] = -196675805,     ["watertype"] = "river"},
-    [25] =  {["name"] = "Bahia De La Paz",      ["waterhash"] = -1168459546,    ["watertype"] = "sea"},
-    [26] =  {["name"] = "Arroyo De La Vibora",  ["waterhash"] = -49694339,      ["watertype"] = "river"},
+    [1] = { ["name"] = "Sea of Coronado", ["waterhash"] = -247856387, ["watertype"] = "sea" },
+    [2] = { ["name"] = "San Luis River", ["waterhash"] = -1504425495, ["watertype"] = "river" },
+    [3] = { ["name"] = "Lake Don Julio", ["waterhash"] = -1369817450, ["watertype"] = "lake" },
+    [4] = { ["name"] = "Flat Iron Lake", ["waterhash"] = -1356490953, ["watertype"] = "lake" },
+    [5] = { ["name"] = "Upper Montana River", ["waterhash"] = -1781130443, ["watertype"] = "river" },
+    [6] = { ["name"] = "Owanjila", ["waterhash"] = -1300497193, ["watertype"] = "river" },
+    [7] = { ["name"] = "HawkEye Creek", ["waterhash"] = -1276586360, ["watertype"] = "river" },
+    [8] = { ["name"] = "Little Creek River", ["waterhash"] = -1410384421, ["watertype"] = "river" },
+    [9] = { ["name"] = "Dakota River", ["waterhash"] = 370072007, ["watertype"] = "river" },
+    [10] = { ["name"] = "Beartooth Beck", ["waterhash"] = 650214731, ["watertype"] = "river" },
+    [11] = { ["name"] = "Lake Isabella", ["waterhash"] = 592454541, ["watertype"] = "lake" },
+    [12] = { ["name"] = "Cattail Pond", ["waterhash"] = -804804953, ["watertype"] = "lake" },
+    [13] = { ["name"] = "Deadboot Creek", ["waterhash"] = 1245451421, ["watertype"] = "river" },
+    [14] = { ["name"] = "Spider Gorge", ["waterhash"] = -218679770, ["watertype"] = "river" },
+    [15] = { ["name"] = "O'Creagh's Run", ["waterhash"] = -1817904483, ["watertype"] = "lake" },
+    [16] = { ["name"] = "Moonstone Pond", ["waterhash"] = -811730579, ["watertype"] = "lake" },
+    [17] = { ["name"] = "Roanoke Valley", ["waterhash"] = -1229593481, ["watertype"] = "river" },
+    [18] = { ["name"] = "Elysian Pool", ["waterhash"] = -105598602, ["watertype"] = "lake" },
+    [19] = { ["name"] = "Lannahechee River", ["waterhash"] = -2040708515, ["watertype"] = "river" },
+    [20] = { ["name"] = "Random1", ["waterhash"] = 231313522, ["watertype"] = "river" },
+    [21] = { ["name"] = "Random2", ["waterhash"] = 2005774838, ["watertype"] = "river" },
+    [22] = { ["name"] = "Random3", ["waterhash"] = -1287619521, ["watertype"] = "river" },
+    [23] = { ["name"] = "Random4", ["waterhash"] = -1308233316, ["watertype"] = "river" },
+    [24] = { ["name"] = "Random5", ["waterhash"] = -196675805, ["watertype"] = "river" },
+    [25] = { ["name"] = "Bahia De La Paz", ["waterhash"] = -1168459546, ["watertype"] = "sea" },
+    [26] = { ["name"] = "Arroyo De La Vibora", ["waterhash"] = -49694339, ["watertype"] = "river" },
 }
 
 -- map zones
 Config.Zones = {
---AMBARINO
-    {Hash = 0x3B8DD21A, Color = 'BLIP_MODIFIER_MP_COLOR_1'}, --STATE_AMBARINO
-    {Hash = 0x3BBA228A, Color = 'BLIP_MODIFIER_MP_COLOR_13'}, --LBS_AMBARINO_BOUNTY
+    --AMBARINO
+    { Hash = 0x3B8DD21A, Color = 'BLIP_MODIFIER_MP_COLOR_1' },  --STATE_AMBARINO
+    { Hash = 0x3BBA228A, Color = 'BLIP_MODIFIER_MP_COLOR_13' }, --LBS_AMBARINO_BOUNTY
     --{Hash = 0x9125D14C, Color = 'BLIP_MODIFIER_MP_COLOR_22'}, --DISTRICT_GRIZZLIES
     --{Hash = 0x943198D3, Color = 'BLIP_MODIFIER_MP_COLOR_1'}, --DISTRICT_GRIZZLIES_EAST
     --{Hash = 0xD41D039A, Color = 'BLIP_MODIFIER_MP_COLOR_21'}, --DISTRICT_GRIZZLIES_WEST
     --{Hash = 0xBB785C8A, Color = 'BLIP_MODIFIER_MP_COLOR_2'}, --REGION_GRZ_WAPITI
     --{Hash = 0x4F45BE43, Color = 'BLIP_MODIFIER_MP_COLOR_2'}, --OUTLINE_WAPITI
 
---LEMOYNE
-    {Hash = 0x945395DF, Color = 'BLIP_MODIFIER_MP_COLOR_3'}, --STATE_LEMOYNE
-    {Hash = 0x0F32B44D, Color = 'BLIP_MODIFIER_MP_COLOR_15'}, --LBS_LEMOYNE_BOUNTY
+    --LEMOYNE
+    { Hash = 0x945395DF, Color = 'BLIP_MODIFIER_MP_COLOR_3' },  --STATE_LEMOYNE
+    { Hash = 0x0F32B44D, Color = 'BLIP_MODIFIER_MP_COLOR_15' }, --LBS_LEMOYNE_BOUNTY
     --{Hash = 0x2843E325, Color = 'BLIP_MODIFIER_MP_COLOR_3'}, --DISTRICT_BAYOU_NWA
     --{Hash = 0x024C01CA, Color = 'BLIP_MODIFIER_MP_COLOR_14'}, --DISTRICT_BLUEGILL_MARSH
     --{Hash = 0x0BB92EEF, Color = 'BLIP_MODIFIER_MP_COLOR_22'}, --DISTRICT_SCARLETT_MEADOWS
@@ -141,18 +138,18 @@ Config.Zones = {
     --{Hash = 0x09FAE063, Color = 'BLIP_MODIFIER_MP_COLOR_15'}, --OUTLINE_RHODES
 
 
---NEW AUSTIN
-    {Hash = 0x41759831, Color = 'BLIP_MODIFIER_MP_COLOR_4'}, --STATE_NEW_AUSTIN
-    {Hash = 0xD339F6AB, Color = 'BLIP_MODIFIER_MP_COLOR_16'}, --LBS_NEW_AUSTIN_BOUNTY
+    --NEW AUSTIN
+    { Hash = 0x41759831, Color = 'BLIP_MODIFIER_MP_COLOR_4' },  --STATE_NEW_AUSTIN
+    { Hash = 0xD339F6AB, Color = 'BLIP_MODIFIER_MP_COLOR_16' }, --LBS_NEW_AUSTIN_BOUNTY
     --{Hash = 0x99B6A1E6, Color = 'BLIP_MODIFIER_MP_COLOR_4'}, --DISTRICT_CHOLLA_SPRINGS
     --{Hash = 0x3AC128F9, Color = 'BLIP_MODIFIER_MP_COLOR_30'}, --DISTRICT_GAPTOOTH_RIDGE
     --{Hash = 0x33D88587, Color = 'BLIP_MODIFIER_MP_COLOR_18'}, --DISTRICT_HENNIGANS_STEAD
     --{Hash = 0xD428627B, Color = 'BLIP_MODIFIER_MP_COLOR_29'}, --DISTRICT_RIO_BRAVO
 
 
---NEW HANOVER
-    {Hash = 0x41332496, Color = 'BLIP_MODIFIER_MP_COLOR_8'}, --STATE_NEW_HANOVER
-    {Hash = 0x5CD2A36F, Color = 'BLIP_MODIFIER_MP_COLOR_20'}, --LBS_NEW_HANOVER_BOUNTY
+    --NEW HANOVER
+    { Hash = 0x41332496, Color = 'BLIP_MODIFIER_MP_COLOR_8' },  --STATE_NEW_HANOVER
+    { Hash = 0x5CD2A36F, Color = 'BLIP_MODIFIER_MP_COLOR_20' }, --LBS_NEW_HANOVER_BOUNTY
 
     --{Hash = 0x717F4A96, Color = 'BLIP_MODIFIER_MP_COLOR_11'}, --DISTRICT_CUMBERLAND_FOREST
     --{Hash = 0x724E7654, Color = 'BLIP_MODIFIER_MP_COLOR_8'}, --DISTRICT_HEARTLAND
@@ -172,9 +169,9 @@ Config.Zones = {
     --{Hash = 0x507B5360, Color = 'BLIP_MODIFIER_MP_COLOR_2'}, --REGION_ROA_VANHORNPOST
     --{Hash = 0x194E52AF, Color = 'BLIP_MODIFIER_MP_COLOR_2'}, --OUTLINE_VANHORNPOST
 
---WEST ELIZABETH
-    {Hash = 0xD69B5B49, Color = 'BLIP_MODIFIER_MP_COLOR_6'}, --STATE_WEST_ELIZABETH
-    {Hash = 0xF030C0B2, Color = 'BLIP_MODIFIER_MP_COLOR_23'}, --LBS_W_ELIZABETH_BOUNTY
+    --WEST ELIZABETH
+    { Hash = 0xD69B5B49, Color = 'BLIP_MODIFIER_MP_COLOR_6' },  --STATE_WEST_ELIZABETH
+    { Hash = 0xF030C0B2, Color = 'BLIP_MODIFIER_MP_COLOR_23' }, --LBS_W_ELIZABETH_BOUNTY
     --{Hash = 0x8DCC574F, Color = 'BLIP_MODIFIER_MP_COLOR_6'}, --DISTRICT_BIG_VALLEY
     --{Hash = 0x0E95FF51, Color = 'BLIP_MODIFIER_MP_COLOR_28'}, --DISTRICT_GREAT_PLAINS
     --{Hash = 0x763A8A87, Color = 'BLIP_MODIFIER_MP_COLOR_31'}, --DISTRICT_TALL_TREES
@@ -185,20 +182,20 @@ Config.Zones = {
     --{Hash = 0xDC87C0C8, Color = 'BLIP_MODIFIER_MP_COLOR_23'}, --REGION_TAL_MANZANITAPOST
 
 
---GUARMA
+    --GUARMA
     --{Hash = 0x9307FD41, Color = 'BLIP_MODIFIER_MP_COLOR_7'}, --STATE_GUARMA
     --{Hash = 0x6009F334, Color = 'BLIP_MODIFIER_MP_COLOR_7'}, --LBS_GUARMA_BOUNTY
 
     --{Hash = 0x6E10D212, Color = 'BLIP_MODIFIER_MP_COLOR_7'}, --REGION_GUA_MANICATO
 
 
---NUEVO PARAÍSO
+    --NUEVO PARAÍSO
     --{Hash = 0x8966022D, Color = 'BLIP_MODIFIER_MP_COLOR_22'}, --DISTRICT_DIEZ_CORONAS
     --{Hash = 0x27253ED3, Color = 'BLIP_MODIFIER_MP_COLOR_22'}, --DISTRICT_PERDIDO
     --{Hash = 0x5046DD11, Color = 'BLIP_MODIFIER_MP_COLOR_22'}, --DISTRICT_PUNTA_ORGULL
 
 
---UNKNOWN
+    --UNKNOWN
     --{Hash = 0xFAF570C5, Color = 'BLIP_MODIFIER_MP_COLOR_22'}, --LOCKOUT_EASTSIDE
     --{Hash = 0xAF5E7C06, Color = 'BLIP_MODIFIER_MP_COLOR_22'}, --STATE_DEFAULT
     --{Hash = 0x21FE6ED8, Color = 'BLIP_MODIFIER_MP_COLOR_1'}, --¿?

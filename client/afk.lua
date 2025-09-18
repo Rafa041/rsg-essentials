@@ -62,7 +62,7 @@ CreateThread(function()
                                 elseif _type == 'seconds' then
                                     lib.notify({ title = locale('cl_will_kick'), description = time .. locale('cl_time_seconds'), type = 'error', duration = 5000 })
                                 end
-                                time -= 1
+                                time = time - 1
                             else
                                 TriggerServerEvent('KickForAFK')
                             end
